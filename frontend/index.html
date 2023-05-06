@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="auto" content='spider'>
+	<meta charset="UTF-8">
+	<title>TRV</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">Hệ thống gợi ý du lịch TRV</h1>
+			<nav>
+				<h2 class="none">Redirect</h2>
+				<ul class="link">
+					<li class="active"><a href="#">TÌM KIẾM</a></li>
+					<li><a href="information.html">GỢI Ý</a></li>
+					<li><a href="scenery.html">ĐÁNH GIÁ</a></li>
+					<li><a href="about.html">CÔNG TY</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="search">
+		<div id="mask"></div>
+		<div class="center">
+		</div>
+		<input class="search" id="inp" type="text" placeholder='Nhập địa điểm bạn muốn tham quan' />
+		<button class="button">OK</button>
+		<script type="text/javascript">
+			var search = document.getElementById('inp');
+			var mask = document.getElementById('mask');
+			search.onfocus = opacity;
+			search.onblur = stop;
+			function opacity() {
+				mask.style.backgroundColor = 'rgba(0,0,0,.4)';
+			}
+			function stop() {
+				mask.style.backgroundColor = 'rgba(0,0,0,0)';
+			}
+		</script>
+	</div>
+
+
+	<div id="tour">
+		<section class='center'>
+			<h2>ĐỊA ĐIỂM NỔI BẬT</h2>
+		</section>
+		<div id="tour-list">
+		</div>
+	</div>
+	<footer id='foot'>
+		<div class="top">
+			<div class="block left ">
+				<h2>HỢP TÁC</h2>
+				<hr>
+				<ul>
+					<li>NQH</li>
+					<li>NDAK</li>
+				</ul>
+			</div>
+			<div class="block center ">
+				<h2>LIÊN HỆ</h2>
+				<hr>
+				<ul>
+				</ul>
+			</div>
+			<div class="block right ">
+				<h2>THÔNG TIN CHUNG</h2>
+				<hr>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			TRV
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="APIs/tour.js?v=1"></script>
+</body>
+
+</html>
