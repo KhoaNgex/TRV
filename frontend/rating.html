@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="auto" content='spider'>
+	<meta charset="UTF-8">
+	<title>TRV</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/rating.css?v=1">
+
+</head>
+
+<body>
+	<header id='header'>
+		<div class='center'>
+			<h1 class="logo">Hệ thống gợi ý du lịch TRV</h1>
+			<nav>
+				<h2 class="none">Redirect</h2>
+				<ul class="link">
+					<li>CHI TIẾT</a></li>
+					<li><a href="information.html">GỢI Ý</a></li>
+					<li><a href="about.html">CÔNG TY</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="info">
+		<div class="tourpic">
+			<img src="image/maldives-tour.jpg" alt="">
+		</div>
+		<div class="tourinfo" id="tourinfo">
+
+		</div>
+	</div>
+	<div class="cmtsection" style="padding-left: 80px; padding-right: 60px;">
+		<h2 class="comment-heading" style="margin-bottom: 20px;">Bình luận</h2>
+		<ul class="comment-list" id="comment-list">
+			<!-- Thêm các comment khác vào đây -->
+		</ul>
+		<form class="comment-form">
+			<h2 class="comment-heading" style="margin-bottom: 20px; margin-top: 50px;">Để lại đánh giá</h2>
+			<div style="margin-bottom: 20px;">
+				<span>Cho điểm: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<select id="point">
+					<option value="1">1 sao</option>
+					<option value="2">2 sao</option>
+					<option value="3">3 sao</option>
+					<option value="4">4 sao</option>
+					<option value="5" selected>5 sao</option>
+				</select>
+			</div>
+			<textarea id="comment-content" class="comment-input" placeholder="Viết bình luận..."></textarea>
+			<button class="comment-btn" type="submit" onclick="postReview();">Đăng tải</button>
+		</form>
+	</div>
+	<div class="mybar">
+
+	</div>
+
+	</div>
+	<footer id='foot'>
+		<div class="top">
+			<div class="block left ">
+				<h2>HỢP TÁC</h2>
+				<hr>
+				<ul>
+					<li>NQH</li>
+					<li>NDAK</li>
+				</ul>
+			</div>
+			<div class="block center ">
+				<h2>LIÊN HỆ</h2>
+				<hr>
+				<ul>
+				</ul>
+			</div>
+			<div class="block right ">
+				<h2>THÔNG TIN CHUNG</h2>
+				<hr>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			TRV
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="APIs/detail.js?v=1"></script>
+</body>
+
+</html>

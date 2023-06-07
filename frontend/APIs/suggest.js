@@ -33,7 +33,7 @@ function renderTour(tours) {
                             <s>` +
           Number(tour.TourPrice).toLocaleString("en-US") +
           ` VNĐ</s>
-							<div class="now"><a href='#'>LIÊN HỆ</a></div>
+							<div class="now"><a href='rating.html?id=`+tour.TID+`'>CHI TIẾT</a></div>
 						</div>
 						<div class="type">` +
           tour.TourAddress +
@@ -81,7 +81,7 @@ function renderTour(tours) {
                             <s>` +
           Number(tour.TourPrice).toLocaleString("en-US") +
           ` VNĐ</s>
-							<div class="now"><a href='#'>LIÊN HỆ</a></div>
+							<div class="now"><a href='rating.html?id=`+tour.TID+`'>CHI TIẾT</a></div>
 						</div>
 						<div class="type">` +
           tour.TourAddress +

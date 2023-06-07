@@ -50,8 +50,7 @@ trait Controller
 			return;
 		}
 
-		$data['id'] = $id;
-		if ($result = $this->data_obj->where($data)) {
+		if ($result = $this->data_obj->where($id)) {
 			http_response_code(200);
 			echo json_encode($result);
 		} else {
